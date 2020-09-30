@@ -1,7 +1,7 @@
 #build
-#/.settings/
-#/.classpath
-#/.project
+/.settings/
+/.classpath
+/.project
 
 /*/out
 objectscriptquality-checks/src/test/resources/parsing/

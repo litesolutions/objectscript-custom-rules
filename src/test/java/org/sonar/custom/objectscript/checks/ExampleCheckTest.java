@@ -1,4 +1,4 @@
-package org.sonar.samples.objectscript.checks;
+package org.sonar.custom.objectscript.checks;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -6,24 +6,25 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.sonar.custom.objectscript.checks.ExampleCheck;
+import org.sonar.custom.objectscript.checks.base.OsqBaseCheckTest;
 import org.sonar.objectscript.api.helpers.ViolationList;
 import org.sonar.plugins.objectscript.api.check.ObjectScriptCheck;
-import org.sonar.samples.objectscript.checks.base.CqBaseCheckTest;
 
-public final class VariableNameLengthCheckTest
-    extends CqBaseCheckTest
+public final class ExampleCheckTest
+    extends OsqBaseCheckTest
 {
 
-    protected VariableNameLengthCheckTest()
+    protected ExampleCheckTest()
         throws IOException, URISyntaxException
     {
-        super(VariableNameLengthCheck.KEY);
+        super(ExampleCheck.KEY);
     }
 
     @Override
     protected ObjectScriptCheck getCheck()
     {
-        return new VariableNameLengthCheck();
+        return new ExampleCheck();
     }
 
     @Override
@@ -36,8 +37,7 @@ public final class VariableNameLengthCheckTest
 
         resourceName = "C1.cls";
         violationList = ViolationList.create()
-            .add(5, String.format(VariableNameLengthCheck.MESSAGE,	"statusverylongexample"))
-            .add(7, String.format(VariableNameLengthCheck.MESSAGE,	"statusverylongexamplemore"))
+            .add(1, ExampleCheck.MESSAGE)
             .build();
         list.add(new Object[] { resourceName, violationList });
 

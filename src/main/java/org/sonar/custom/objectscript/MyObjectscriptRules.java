@@ -1,4 +1,4 @@
-package org.sonar.samples.objectscript;
+package org.sonar.custom.objectscript;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -10,9 +10,9 @@ import java.util.Map;
 
 import org.sonar.api.server.rule.RulesDefinition;
 import org.sonar.api.server.rule.RulesDefinitionAnnotationLoader;
+import org.sonar.custom.objectscript.checks.ExampleCheck;
+import org.sonar.custom.objectscript.checks.VariableNameLengthCheck;
 import org.sonar.plugins.objectscript.api.ObjectscriptCustomRuleRepository;
-import org.sonar.samples.objectscript.checks.ExampleCheck;
-import org.sonar.samples.objectscript.checks.VariableNameLengthCheck;
 
 import com.google.common.collect.ImmutableList;
 

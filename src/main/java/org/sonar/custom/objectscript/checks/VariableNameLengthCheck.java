@@ -1,4 +1,4 @@
-package org.sonar.samples.objectscript.checks;
+package org.sonar.custom.objectscript.checks;
 
 import org.sonar.check.Priority;
 import org.sonar.check.Rule;
@@ -44,7 +44,7 @@ public final class VariableNameLengthCheck extends ObjectScriptMethodCheck {
      *
      * Here, CQEX is an abbreviation for "cqexample".
      */
-	public static final String KEY = "VNL0002";
+	public static final String KEY = "CRQ0002";
 
     /*
      * The name of the check. This will appear in the check list in SonarQube,

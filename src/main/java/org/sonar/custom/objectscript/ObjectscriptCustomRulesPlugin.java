@@ -1,4 +1,4 @@
-package org.sonar.samples.objectscript;
+package org.sonar.custom.objectscript;
 
 import org.sonar.api.Plugin;
 

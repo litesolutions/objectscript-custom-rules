@@ -1,4 +1,4 @@
-package org.sonar.samples.objectscript.checks;
+package org.sonar.custom.objectscript.checks;
 
 import org.sonar.check.Priority;
 import org.sonar.check.Rule;
@@ -17,7 +17,7 @@ public final class ExampleCheck extends ObjectScriptClassCheck {
     static final String NAME = "Test title";
 
     @VisibleForTesting
-    public static final String KEY = "VNL0001";
+    public static final String KEY = "CRQ0001";
 
     @VisibleForTesting
     static final String MESSAGE = "Test message ";
