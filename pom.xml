@@ -57,7 +57,7 @@
 				<configuration>
 					<pluginKey>objectscript-custom</pluginKey>
 					<pluginName>Objectscript Custom Rules</pluginName>
-					<pluginClass>org.sonar.samples.objectscript.ObjectscriptCustomRulesPlugin</pluginClass>
+					<pluginClass>org.sonar.custom.objectscript.ObjectscriptCustomRulesPlugin</pluginClass>
 					<sonarLintSupported>true</sonarLintSupported>
 					<sonarQubeMinVersion>6.7</sonarQubeMinVersion>
 					<basePlugin>objectscript</basePlugin>
