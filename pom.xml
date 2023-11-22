@@ -16,7 +16,7 @@
   
  	<properties>
 		<sonar.version>7.2</sonar.version>
-		<objectscript.version>3.4.2</objectscript.version>
+		<objectscript.version>3.4.4</objectscript.version>
 	</properties>
 
 	<dependencies>
@@ -74,6 +74,17 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			 <plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-surefire-plugin</artifactId>
+		        <version>2.22.2</version>
+		        <configuration>
+		          <argLine>
+		            --add-opens java.base/java.lang=ALL-UNNAMED
+		            --add-opens java.base/java.util=ALL-UNNAMED
+		          </argLine>
+		        </configuration>
+		      </plugin>
 		</plugins>
 	</build>
 	
