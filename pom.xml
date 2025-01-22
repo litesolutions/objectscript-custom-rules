@@ -16,7 +16,7 @@
   
  	<properties>
 		<sonar.version>7.2</sonar.version>
-		<objectscript.version>3.4.4</objectscript.version>
+		<objectscript.version>3.4.6</objectscript.version>
 	</properties>
 
 	<dependencies>
